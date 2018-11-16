@@ -1,0 +1,60 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+
+    section#page-title
+        .container.clearfix
+            h1 联系我们
+            ol.breadcrumb
+                a(href="javascript:;") 火星人
+                |  > 
+                a(href='contact') 联系我们
+                |  >
+    section.section-wrap.contact
+        .container
+            h2.text-center 联系我们
+            p.subheading.text-center 我们致为于打造优秀的建站资源共享平台
+            .main-border.blue
+            .row.mt50
+                .col-md-7.col-sm-7
+                    form
+                        input(type='hidden', value='post', name='action')
+                        input(type='hidden', value='3', name='diyid')
+                        input(type='hidden', value='2', name='do')
+                        input.form-control(name='name4', type='text', placeholder='名字')
+                        input.form-control(name='email4', type='text', placeholder='邮箱')
+                        input.form-control(name='title4', type='text', placeholder='标题')
+                        textarea.form-control(name='con4', placeholder='内容')
+                        input(type='hidden', value='name4,text;email4,text;title4,text;con4,multitext', name='dede_fields')
+                        input(type='hidden', value='3b6c709db80d60e5cdaca9c897f70c21', name='dede_fieldshash')
+                        input.submit-message(type='submit', value='在线留言')
+
+                .col-md-4.col-md-offset-1.col-sm-5
+                    h5 在线客服
+                    p
+                        | 工作时间 9:00 pm – 20:00 pm
+                        br
+                        | 您可以通过电话或者在线留言联系我们
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-Phone2
+                        span 0771-3216270
+
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-Mail
+                        a(href='mailto:dc@mars-it.net.') dc@mars-it.net.
+
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-House
+                        span 广西南宁市西乡塘区科园大道科园东5路南宁软件园一楼火星人科技
+
+
+block script
+    script.
+
+

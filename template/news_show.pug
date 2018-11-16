@@ -1,0 +1,104 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    section#page-title
+        .container.clearfix
+            h1 平面设计/公司新闻/行业新闻/最新动态
+            ol.breadcrumb
+                a(href="javascript:;") 火星人
+                | >
+                a(href='news') 新闻中心
+                | >
+                a(href='news') 最新动态
+                | >
+
+    section.section-wrap.blog-standard
+        .container.relative
+            .row
+                // content
+                .col-md-9.col-sm-8
+                    .entry-item
+                        .entry
+                            .entry-title
+                                h2
+                                    a(href='javascript:;') 响应式Web设计的9项基本原则
+                            ul.entry-meta
+                                li 2015-06-10
+                                li by admin
+                            .entry-content
+                                p
+                                    | 想象一下走进一个狭小拥挤，遍地垃圾的商店。店员不停怂恿你买自己不想要的东西。在这种情况下，你肯定会马上转身离开去别家。如果有人给你压力，逼迫你在充满敌意的环境下快速做出抉择，你会自
+                                a.btn.btn-stroke.btn-small.btn-rounded(href='javascript:;') 查看详细
+
+                    .dede_pages(style='margin-top:40px;')
+                        ul.pagelist
+                            li
+                                span.pageinfo
+                                    | 共 
+                                    strong 1
+                                    | 页
+                                    strong 1
+                                    | 条记录
+  
+                #sidebar.col-md-3.col-sm-4.blog-sidebar
+                    .widget.categories
+                        h4 相关栏目
+                        ul
+                            li
+                                a(href='news') 公司新闻
+                            li
+                                a(href='news') 行业新闻
+                            li
+                                a(href='news') 最新动态
+                    .widget.popular-latest
+                        .tabs
+                            ul.nav.nav-tabs.nav-justified
+                                li.active
+                                    a(data-toggle='tab', href='#tab-one') 最新新闻
+                                li
+                                    a(data-toggle='tab', href='#tab-two') 热门新闻
+
+                            .tab-content
+                                #tab-one.tab-pane.fade.in.active
+                                    ul
+                                        li
+                                            a(href='2015/0320/10.html') 响应式Web设计的9项基本原则
+                                            ul.entry-meta
+                                                li 2015-06-10
+                                                li admin
+                                #tab-two.tab-pane.fade
+                                    ul
+                                        li
+                                            a(href='2015/0320/10.html') 响应式Web设计的9项基本原则
+                                            ul.entry-meta
+                                                li 2015-06-10
+                                                li admin
+
+                        .widget.sidebar-recent-works
+                            h4 最新产品
+                            ul.recent-works.clearfix
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503201432160-L.jpg' width='65', height='65')
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503201433250-L.jpeg' width='65', height='65')
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503202053470-L.jpg' width='65', height='65')
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503202054230-L.png' width='65', height='65')
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503202055010-L.jpg' width='65', height='65')
+                                li
+                                    a(href='product_show')
+                                        img(src='/public/images/homepage/1-1503202055330-L.jpg' width='65', height='65')
+
+block script
+    script.
+

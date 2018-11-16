@@ -1,0 +1,143 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    section#page-title
+        .container.clearfix
+            h1 新闻中心
+            ol.breadcrumb
+                a(href="javascript:;") 火星人
+                |  > 
+                a(href='news') 新闻中心
+
+    section.section-wrap.blog-standard
+        .container.relative
+            .row
+                .col-md-9.col-sm-8
+                    .entry-item
+                        .entry
+                            .entry-title
+                                h2
+                                    a(href='javascript:;') 2015年的网站设计重心会更倾向于“用户体验”
+                            ul.entry-meta
+                                li 2016-01-22
+                                li by admin
+                            .entry-content
+                                p
+                                    | 网页设计趋势的探讨主要会在排版布局、色彩搭配、用户体验和设计风格中进行。2014年设计趋势的综合指数比较高，每个部分都会有所涉及；而随着用户对网站使用体验的要求越来越严苛，我们有理由相
+                                a.btn.btn-stroke.btn-small.btn-rounded(href='javascript:;') 查看详细
+                    .entry-item
+                        .entry
+                            .entry-title
+                                h2
+                                    a(href='javascript:;') 用户体验制作:制作让用户发泄焦灼等待的情绪
+                            ul.entry-meta
+                                li 2016-01-22
+                                li by admin
+                            .entry-content
+                                p
+                                    | 在煎蛋上看到一个比较有意思的文章，顺便也看看下面的回复，突然想起很多有意思的东西，关于情感化制作。我开始思考，是不是在很多时候，在考虑界面精简的同时，我们也需提供一点毫无意义的东西
+                                a.btn.btn-stroke.btn-small.btn-rounded(href='javascript:;') 查看详细
+                    .entry-item
+                        .entry
+                            .entry-title
+                                h2
+                                    a(href='javascript:;') 2015年至关重要的4种网站模板排版趋势
+                            ul.entry-meta
+                                li 2015-06-10
+                                li by admin
+                            .entry-content
+                                p
+                                    | 近 十年来，互联网已经发生了翻天覆地的变化，然而它其实一点也没变。如果看看10年前，我们会发现大批网站都有一套通行的排版模式。页头、页脚、侧边栏和内 容区域，构成了这种直截了当的布局。
+                                a.btn.btn-stroke.btn-small.btn-rounded(href='javascript:;') 查看详细
+                    .dede_pages(style='margin-top:40px;')
+                        ul.pagelist
+                            li
+                                span.pageinfo
+                                    | 共 
+                                    strong 1
+                                    | 页
+                                    strong 3
+                                    | 条记录
+
+                #sidebar.col-md-3.col-sm-4.blog-sidebar
+                    .widget.categories
+                        h4 相关栏目
+                        ul
+                            li
+                                a(href='news_show') 公司新闻
+                            li
+                                a(href='news_show') 行业新闻
+                            li
+                                a(href='news_show') 最新动态
+                    .widget.popular-latest
+                        .tabs
+                            ul.nav.nav-tabs.nav-justified
+                                li.active
+                                    a(data-toggle='tab', href='#tab-one') 最新新闻
+                                li
+                                    a(data-toggle='tab', href='#tab-two') 热门新闻
+
+                            .tab-content
+                                #tab-one.tab-pane.fade.in.active
+                                    ul
+                                        li
+                                            a(href='javascript:;') 2015年的网站设计重心会更倾向
+                                            ul.entry-meta
+                                                li 2016-01-22
+                                                li admin
+                                        li
+                                            a(href='javascript:;') 用户体验制作:制作让用户发泄
+                                            ul.entry-meta
+                                                li 2016-01-22
+                                                li admin
+                                        li
+                                            a(href='javascript:;') 2015年至关重要的4种网站模板
+                                            ul.entry-meta
+                                                li 2015-06-10
+                                                li admin
+                                #tab-two.tab-pane.fade
+                                    ul
+                                        li
+                                            a(href='javascript:;') 用户体验制作:制作让用户发泄
+                                            ul.entry-meta
+                                                li 2016-01-22
+                                                li admin
+                                        li
+                                            a(href='javascript:;') 2015年至关重要的4种网站模板
+                                            ul.entry-meta
+                                                li 2015-06-10
+                                                li admin
+                                        li
+                                            a(href='javascript:;') 2015年的网站设计重心会更倾向
+                                            ul.entry-meta
+                                                li 2016-01-22
+                                                li admin
+
+                    .widget.sidebar-recent-works
+                        h4 最新产品
+                        ul.recent-works.clearfix
+                            li
+                                a(href='product_show')
+                                    img(src='/public/images/homepage/1-1503201432160-L.jpg' width='65', height='65')
+                            li
+                                a(href='../../kefuanli/wangzhansheji/2015/0320/2.html')
+                                    img(src='/public/images/homepage/1-1503201433250-L.jpeg' width='65', height='65')
+                            li
+                                a(href='../../kefuanli/wangzhansheji/2015/0320/16.html')
+                                    img(src='/public/images/homepage/1-1503202053470-L.jpg' width='65', height='65')
+                            li
+                                a(href='../../kefuanli/wangzhansheji/2015/0320/17.html')
+                                    img(src='/public/images/homepage/1-1503202054230-L.png' width='65', height='65')
+                            li
+                                a(href='../../kefuanli/wangzhansheji/2015/0320/18.html')
+                                    img(src='/public/images/homepage/1-1503202055010-L.jpg' width='65', height='65')
+                            li
+                                a(href='../../kefuanli/pingmiansheji/2015/0320/19.html')
+                                    img(src='/public/images/homepage/1-1503202055330-L.jpg' width='65', height='65')
+
+
+block script
+    script.

@@ -1,0 +1,42 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+
+    include index/indexpage1
+    include index/indexpage2
+    include index/indexpage3
+    include index/indexpage4
+    include index/indexpage5
+    include index/indexpage6
+    include index/indexpage7
+    include index/indexpage8
+    include index/indexpage9
+    include index/indexpage10
+    include index/indexpage11
+    include index/indexpage12
+    include index/indexpage13
+
+
+block script
+    script.
+        jQuery(document).ready(function() {
+                jQuery('.tp-banner').revolution(
+                {
+                    delay:9000,
+                    startwidth:1170,
+                    startheight:680,
+                    hideThumbs:10,
+
+                    navigationType:"bullet",
+                    navigationStyle:"preview1",
+
+                    hideArrowsOnMobile:"on",
+                    
+                    touchenabled:"on",
+                    onHoverStop:"on",
+                    spinner:"spinner4"
+                });
+        });

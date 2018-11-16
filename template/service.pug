@@ -1,0 +1,273 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+
+    section#page-title
+        .container.clearfix
+            h1 服务中心
+            ol.breadcrumb
+                a(href="javascript:;") 火星人
+                |  > 
+                a(href='service') 服务中心
+
+    section.section-wrap.icon-boxes.style-3
+        .container
+            .row
+                .col-md-3.col-sm-6.wow.fadeIn(data-wow-delay='0.5s', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;')
+                    .service-item-box.first
+                        a(href='javascript:;')
+                            i.icon.icon-ShoppingCart
+                        h3 网站模板
+                        p 火星人专业提供网站模板，网页模板，模板教程，培训视频，网页制作，程序插件，网站素材等建站资源免费下载
+                        a(href='javascript:;') 查看更多
+
+                .col-md-3.col-sm-6.wow.fadeIn(data-wow-delay='0.6s', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-delay: 0.6s; animation-name: fadeIn;')
+                    .service-item-box.second
+                        a(href='javascript:;')
+                            i.icon.icon-Timer
+                        h3 视频教程
+                        p 火星人提供系统全面的视频教程，让你轻松学习建站。视频涉及网站建设基础教程，织梦视频教程，discuz视频教程
+                        a(href='javascript:;') 查看更多
+
+                .col-md-3.col-sm-6.wow.fadeIn(data-wow-delay='0.7s', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeIn;')
+                    .service-item-box.third
+                        a(href='javascript:;')
+                            i.icon.icon-Search
+                        h3 在线培训
+                        p 从零开始系统全面的教你如何建立一个属于自己的网站并实现盈利。课程涉及网站搭建，SEO，模板开发等建站技术
+                        a(href='javascript:;') 查看更多
+
+                .col-md-3.col-sm-6.wow.fadeIn(data-wow-delay='0.8s', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-delay: 0.8s; animation-name: fadeIn;')
+                    .service-item-box.fourth
+                        a(href='javascript:;')
+                            i.icon.icon-Blog
+                        h3 网站SEO
+                        p 火星人专业提供网站模板，网页模板，模板教程，培训视频，网页制作，程序插件，网站素材等建站资源免费下载
+                        a(href='javascript:;') 查看更多
+
+    section.section-wrap.description-accordion
+        .container
+            .row
+
+                .col-sm-6
+                    h3
+                        | 我们的服务
+                    .main-border.blue.border-left
+                    p.intro-subheading.small
+                        | Those who find beautiful meanings in beautiful things
+                    p.mb20
+                        | 火星人专业提供网站模板，网页模板，模板教程，培训视频，网页制作，程序插件，网站素材等建站资源免费下载
+                    p
+                        | 观看火星人学院里的网站建设视频课程，对网站建设流程有一个初步的了解。火星人老师通过QQ群远程教学，全面系统的给大家讲解建站知识。内容涉及网站搭建，网站优化，模板开发等最新建站技术。自己搭建一个网站并开发一套模板，碰到不理解或不会的，可以咨询我们在线QQ辅导员，我们每天8小时在线提供顾问式指导。
+
+                .col-sm-6.how-we-work
+                    h3
+                        | 在线培训
+                    .main-border.blue.border-left
+                    .accordion
+                        .acc-panel
+                            a(href='') 第一阶段：预习
+                        .panel-content(style='display: none;')
+                            p
+                                | 学习内容：观看火星人学院里的网站建设视频课程，对网站建设流程有一个初步的了解。认识html语言，div+css布局等一些建站基础知识。
+                        .acc-panel
+                            a.active(href='') 第二阶段：上课
+                        .panel-content(style='display: block;')
+                            p
+                                | 学习内容：火星人老师通过QQ群远程教学，全面系统的给大家讲解建站知识。内容涉及网站搭建，网站优化，模板开发等最新建站技术。
+                        .acc-panel
+                            a(href='') 第三阶段：实践
+                        .panel-content(style='display: none;')
+                            p
+                                | 学习内容：自己搭建一个网站并开发一套模板，碰到不理解或不会的，可以咨询我们在线QQ辅导员，我们每天8小时在线提供顾问式指导。
+
+    section.section-wrap.process-parallax
+        .container
+            h2.text-center.heading-white 交易流程
+            p.subheading.text-center www.22vd.com
+            .main-border.blue
+            .row.mt50
+                .col-sm-5ths.text-center.wow.bounceIn(data-wow-duration='1s', data-wow-delay='0.2s', style='visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: bounceIn;')
+                    .process-item.icon-effect-8.icon-blue
+                        a(href='javascript:;')
+                            i.hi-icon.icon.icon-ClipboardText
+                        h5.heading-white 1. 联系客服
+                .col-sm-5ths.text-center.wow.bounceIn(data-wow-duration='1s', data-wow-delay='0.3s', style='visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: bounceIn;')
+                    .process-item.icon-effect-8.icon-blue
+                        a(href='javascript:;')
+                            i.hi-icon.icon.icon-Bulb
+                        h5.heading-white 2. 沟通意见
+                .col-sm-5ths.text-center.wow.bounceIn(data-wow-duration='1s', data-wow-delay='0.4s', style='visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: bounceIn;')
+                    .process-item.icon-effect-8.icon-blue
+                        a(href='javascript:;')
+                            i.hi-icon.icon.icon-Settings
+                        h5.heading-white 3. 确认定单
+                .col-sm-5ths.text-center.wow.bounceIn(data-wow-duration='1s', data-wow-delay='0.5s', style='visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: bounceIn;')
+                    .process-item.icon-effect-8.icon-blue
+                        a(href='javascript:;')
+                            i.hi-icon.icon.icon-Starship
+                        h5.heading-white 4. 开发制作
+                .col-sm-5ths.text-center.wow.bounceIn(data-wow-duration='1s', data-wow-delay='0.6s', style='visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: bounceIn;')
+                    .process-item.icon-effect-8.icon-blue
+                        a(href='javascript:;')
+                            i.hi-icon.icon.icon-Headset
+                        h5.heading-white 5. 验收交付
+
+    section#featured-works.featured-wide-slider.section-wrap.bg-light
+        .container
+            h2.text-center.mb80 成功案例
+            #owl-featured-works-one-img.owl-carousel.owl-theme
+                .item
+                    a(href='javascript:;')
+                        img(src='/public/images/onepage/featured_works_img_1.jpg')
+
+                .item
+                    a(href='javascript:;')
+                        img(src='/public/images/onepage/featured_works_img_2.jpg')
+
+                .item
+                    a(href='javascript:;')
+                        img(src='/public/images/onepage/featured_works_img_3.jpg')
+
+    section.section-wrap.results-parallax
+        .container
+            h2.text-center.heading-white 网站数据
+            p.subheading.text-center www.22vd.com
+            .main-border.blue
+            .row.mt30
+                .col-sm-3.text-center
+                    .statistic
+                        span.timer(data-from='0', data-to='547') 547
+                        h5.counter-text VIP会员
+
+                .col-sm-3.text-center
+                    .statistic
+                        span.timer(data-from='0', data-to='1024') 1024
+                        h5.counter-text 视频教程
+
+                .col-sm-3.text-center
+                    .statistic
+                        span.timer(data-from='0', data-to='3589') 3589
+                        h5.counter-text 网站模板
+
+                .col-sm-3.text-center
+                    .statistic
+                        span.timer(data-from='0', data-to='999') 999
+                        h5.counter-text 火星人学员
+
+    section.section-wrap.testimonials-boxes.bg-light
+        .container
+            h2.text-center 客户评价
+            p.subheading.text-center www.22vd.com
+            .main-border.blue
+            .row.mt20
+                .col-sm-6.wow.fadeIn(data-wow-delay='0.2', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-name: fadeIn;')
+                    .testimonial-item
+                        .testimonials-box
+                            img.testimonials-img( src='/public/images/testimonials_img_1.jpg')
+                            .testimonial
+                                h5.testimonial-name 蓝新科技
+                                span CEO of Company
+                                p 在网上寻觅了很久很久。终于找到了这里。晃眼一看，好多漂亮的模板。下载了几个都很好用。希望越做越好，多提供些精品资源！
+
+                .col-sm-6.wow.fadeIn(data-wow-delay='0.4', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-name: fadeIn;')
+                    .testimonial-item
+                        .testimonials-box
+                            img.testimonials-img( src='/public/images/testimonials_img_2.jpg')
+                            .testimonial
+                                h5.testimonial-name 红色海水
+                                span Graphicriver.net
+                                p 找了好久啊，一直想有一个这样的网站，找来找去，老感觉么有合适的。偶然间来到这儿，爽。找到啦！支持火星人！
+
+            .row
+                .col-sm-6.wow.fadeIn(data-wow-delay='0.6', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-name: fadeIn;')
+                    .testimonial-item
+                        .testimonials-box
+                            img.testimonials-img(alt='testimonials-img-3', src='/public/images/testimonials_img_3.jpg')
+                            .testimonial
+                                h5.testimonial-name 游水的鱼
+                                span Creative Designer
+                                p 找模板找了很久了，于是找到了火星人，觉的这里的模板很不错，下载了两套试试，果然可以用。于是充值了，希望站长以后多多指点啊！
+
+                .col-sm-6.wow.fadeIn(data-wow-delay='0.8', data-wow-duration='2s', style='visibility: visible; animation-duration: 2s; animation-name: fadeIn;')
+                    .testimonial-item
+                        .testimonials-box
+                            img.testimonials-img(alt='testimonials-img-4', src='/public/images/testimonials_img_4.jpg')
+                            .testimonial
+                                h5.testimonial-name sun520mm
+                                span 设计师
+                                p 火星人站长很友好，为我们这些新手站长提供这么多的模版。大家一起交流，才能成长得更快吧！感谢火星人，感谢网友，你们辛苦了！
+
+    section.partners-dark
+        .container
+            .row
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_1.png')
+
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_2.png')
+
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_3.png')
+
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_4.png')
+
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_5.png')
+
+                .col-md-2.col-sm-4.col-xs-6
+                    a(href='javascript:;')
+                        img( src='/public/images/partner_logo_6.png')
+
+    section.section-wrap.contact
+        .container
+            h2.text-center 联系我们
+            p.subheading.text-center 我们致为于打造优秀的建站资源共享平台
+            .main-border.blue
+            .row.mt50
+                .col-md-7.col-sm-7
+                    form
+                        input(type='hidden', value='post', name='action')
+                        input(type='hidden', value='3', name='diyid')
+                        input(type='hidden', value='2', name='do')
+                        input.form-control(name='name4', type='text', placeholder='名字')
+                        input.form-control(name='email4', type='text', placeholder='邮箱')
+                        input.form-control(name='title4', type='text', placeholder='标题')
+                        textarea.form-control(name='con4', placeholder='内容')
+                        input(type='hidden', value='name4,text;email4,text;title4,text;con4,multitext', name='dede_fields')
+                        input(type='hidden', value='3b6c709db80d60e5cdaca9c897f70c21', name='dede_fieldshash')
+                        input.submit-message(type='submit', value='在线留言')
+
+                .col-md-4.col-md-offset-1.col-sm-5
+                    h5 在线客服
+                    p
+                        | 工作时间 8:00 pm – 20:00 pm
+                        br
+                        | 您可以通过电话或者在线留言联系我们
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-Phone2
+                        span 028-88888888
+
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-Mail
+                        a(href='mailto:admin@qq.com') admin@qq.com
+
+                    .contact-item
+                        .contact-icon
+                            i.icon.icon-House
+                        span 四川省成都市高新区孵化园
+
+
+block script
+    script.

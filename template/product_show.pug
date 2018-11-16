@@ -1,0 +1,71 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+block content
+
+    section#page-title
+        .container.clearfix
+            h1 网站设计
+            ol.breadcrumb
+                a(href="javascript:;") 火星人
+                |  > 
+                a(href='product_show') 产品展示
+                |  > 
+                a(href='product') 网站设计
+                |  >
+
+    section.section-wrap.portfolio-single
+        .container
+            .row
+                .col-md-8
+                    #owl-slider-one-img.owl-carousel.owl-theme(style='opacity: 1; display: block;')
+                        p
+                            img(src='/public/images/product_show/1-16022R31619.jpg')
+                        p
+                            img(src='/public/images/product_show/1-16022R31620.jpg')
+
+                .col-md-4
+                    .portfolio-description
+                        h2 UX与UI不是对立而是共生
+                        p
+                            font(style='font-size:14px')
+                                | 对于网站来说，公司设计团队完善UI的目的通常是为了提高UX。菜单项、按钮、文字、图像、视频以及其各自在页面上的位置构成了界面，所有这些要素都应当仔细规划。而这些就是UX的组成元素，它们的使用方式直接影响着用户的感觉。
+                            br
+                            br
+                            font(style='font-size:14px')
+                                | 我们首先通过几个示例来概览一下UI，说明有哪些策略可以帮助你了解为什么优秀的UX取决于UI的优劣，然后再详细讲解一下为什么塑造UI要比塑造UX容易（虽容易，但不一定就能做对）。
+                            br
+                            br
+                            strong
+                                font(style='font-size:14px') Web端UI的是与非
+                            br
+                            br
+                            font(style='font-size:14px')
+                                | 在web端，比方说设计师想添加拖拽文件作为整理内容的方式。这就属于UI的范畴。又比方说用户觉得这个网站没有另一家竞争对手的网站做得好，因为在另一家网站上用户能够轻松简单地听几个小时的音乐。这就属于UX的范畴。
+                        ul
+                            li
+                                span 时间:
+                                |  2016-03-07 20:18
+                            li
+                                span 作者:
+                                |  admin
+                            li
+                                span 点击:45
+                                | 次
+                        .entry-share
+                            .bdsharebuttonbox
+                                a.bds_more(href='#', data-cmd='more')
+                                a.bds_qzone(title='分享到QQ空间', href='#', data-cmd='qzone')
+                                a.bds_tsina(title='分享到新浪微博', href='#', data-cmd='tsina')
+                                a.bds_tqq(title='分享到腾讯微博', href='#', data-cmd='tqq')
+                                a.bds_renren(title='分享到人人网', href='#', data-cmd='renren')
+                                a.bds_weixin(title='分享到微信', href='#', data-cmd='weixin')
+                            script.
+
+
+
+block script
+    script.
+          window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
