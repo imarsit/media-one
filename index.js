@@ -1,6 +1,6 @@
 module.exports = {
 	// 模版标识
-	name: 'example',
+	name: 'media-one',
 	// 模版引擎
 	engine: 'pug',
 
